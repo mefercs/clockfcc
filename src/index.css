@@ -17,21 +17,44 @@ code {
 .App {
   width: 100%;
   min-height:100vh;
-  background: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(45deg, pink, purple);
 }
-
+.config{
+  display:flex;
+  column-gap: 10px;
+}
 .session, .break,.timer{
   border: 1px solid black;
-  width: 500px; 
-  height: 130px;
+  width: 250px; 
+  padding:10px;
   margin-bottom: 5px;
   display:flex;
   justify-content: center; 
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
+  background:rgba(0, 0, 0, 0.6);
+  color: white;
+  row-gap: 10px;
+}
+button{ 
+  border:2px solid white;
+  background: None;
+  color:white;
+  padding:5px;
+  border-radius:10px;
+}
+button:hover{ 
+  background:#303030;
+}
+
+@media ( max-width: 600px ){
+  .config{
+    flex-direction: column;
+
+  }
 }

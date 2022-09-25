@@ -13,7 +13,8 @@ const Timer = props => {
 
 
   return ( <div className="timer">
-    <h1 style={ props.breakStart?{color:"green"}:{color:"black"}} id="time-left">{props.timer.minutes}:{props.timer.seconds}</h1>
+    <h1>TIMER</h1>
+    <h1 style={ props.breakStart?{color:"#00F0F0"}:{color:"white"}} id="time-left">{props.timer.minutes}:{props.timer.seconds}</h1>
     <button onClick={handleStartStop} id="start_stop">START-STOP</button>
     <button onClick={handleReset} id="reset">RESET</button>
   </div> )
